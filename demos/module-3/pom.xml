@@ -19,5 +19,6 @@
     <modules>
         <module>customer-integration</module>
         <module>customer-integration-before</module>
+      <module>customer-integration-with-spring-integration</module>
     </modules>
 </project>
