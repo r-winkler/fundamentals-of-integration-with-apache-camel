@@ -15,6 +15,10 @@ import java.util.List;
 public class AddressUpdateLineToCustomerMapper {
 
     public Customer process(List<String> addressLineRow) throws Exception {
+
+        if (Math.random() > 0.5) {
+            throw new RuntimeException();
+        }
         Customer customer = new Customer();
         customer.setId(Integer.parseInt(addressLineRow.get(0)));
         customer.setAddressLine1(addressLineRow.get(1));
